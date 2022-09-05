@@ -3,12 +3,10 @@ import dotenv from 'dotenv';
 import '@nomicfoundation/hardhat-toolbox';
 
 dotenv.config();
-console.log(process.env);
-
 const config: HardhatUserConfig = {
   solidity: '0.8.9',
   networks: {
-    rinkeby: {
+    ropsten: {
       url: process.env.REACT_APP_ROPSTEN_ROC_URL,
       accounts: [process.env.REACT_APP_PRIVATE_KEY],
     },

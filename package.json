@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile":"npx hardhat compile",
-    "deploy":"npx hardhat run"
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run ./scripts/deploy.ts --network ropsten",
+    "verify": "npx hardhat verify --network ropsten"
   },
   "author": "",
   "license": "ISC",
